@@ -2,8 +2,10 @@ import React from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import Cart from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
+import { useAppSelector } from "../store/store";
 
 const Header = () => {
+  const basketItems = useAppSelector((state) => state.data.basketItems);
   return (
     <div className="header">
       <Link to="/">
@@ -32,7 +34,7 @@ const Header = () => {
         </Link>
         <Link to="/cart" className="header__cart">
           <Cart />
-          <span>0</span>
+          <span>{basketItems.length}</span>
         </Link>
       </div>
     </div>

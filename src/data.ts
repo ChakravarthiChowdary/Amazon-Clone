@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: "tagdhaueh",
+    id: "tagdh234aueh",
     title: "Oxygen Concentrators",
     image:
       "https://images-eu.ssl-images-amazon.com/images/G/31/img21/PCA/MayART_CC_1x-PC._SY304_CB667446293_.jpg",
@@ -8,7 +8,7 @@ export const products = [
     rating: 5,
   },
   {
-    id: "tagaseraueh",
+    id: "ta234gaseraueh",
     title: "Effective dishwashing for Indian cooking",
     image:
       "https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/DW_CC_-_March_379x304._SY304_CB655397356_.jpg",
@@ -16,7 +16,7 @@ export const products = [
     rating: 4,
   },
   {
-    id: "tagdhaasdrueh",
+    id: "tagdhaas34drueh",
     title: "Up to 60% off | School from home essentials",
     image:
       "https://images-eu.ssl-images-amazon.com/images/G/31/img21/OP/BTS/D14264916_IN_Printers_OP_GW_revamp_nov19_dashbord_Card_1x_4._SY304_CB667376048_.jpg",
@@ -24,7 +24,7 @@ export const products = [
     rating: 3,
   },
   {
-    id: "tagdharwqueh",
+    id: "tagdhar123wqueh",
     title:
       "Logitech C270 HD Webcam, HD 720p/30fps, Widescreen HD Video Calling, HD Light Correction,",
     image:
@@ -33,7 +33,7 @@ export const products = [
     rating: 5,
   },
   {
-    id: "tagdhaueh",
+    id: "tagdha123ueh",
     title:
       "Voltas Beko 8 Place Table Top Dishwasher (DT8S, Silver, Inbuilt Heater, Adjustable Upper Shelf)",
     image:

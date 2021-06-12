@@ -8,3 +8,11 @@ $background-color: #eaeded;
   padding: 0.5rem;
   box-sizing: border-box;
 }
+
+@mixin default-button {
+  background-color: $secondary-color;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+}

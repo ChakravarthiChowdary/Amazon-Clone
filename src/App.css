@@ -161,10 +161,11 @@
   background-color: #febd69;
   border: 1px solid;
   border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 2px 50px;
 }
 
 .product__rating {
@@ -182,5 +183,118 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.cart__image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 80%;
+  height: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.cart__heading {
+  margin: 1rem 1rem;
+}
+
+.cart__banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart__summary {
+  background-color: white;
+  height: 248px;
+  width: 100%;
+}
+
+.cart__items {
+  margin-bottom: 1rem;
+}
+
+.cart__emptyImage {
+  width: 400px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-right: 3rem;
+}
+
+.cart__emptyBanner {
+  background-color: white;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+}
+
+.cart__emptyBanner button {
+  margin-top: 2rem;
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+}
+
+.cart__emptyInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cartItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.cartItem__stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartItem__image {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.cartItem__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cartItem__info button {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
 }
 /*# sourceMappingURL=App.css.map */

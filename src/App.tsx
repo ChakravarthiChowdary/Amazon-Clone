@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router";
 
 import "./App.css";
 import Header from "./components/Header";
+import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
         <Route path="/login">
           <h1>Login Page</h1>
         </Route>
-        <Route path="/checkout">
+        <Route path="/cart">
           <Header />
-          <h1>Checkout</h1>
+          <Cart />
         </Route>
         <Route path="/">
           <Header />

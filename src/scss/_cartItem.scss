@@ -1,0 +1,26 @@
+.cartItem {
+  display: flex;
+  margin: 0 1rem;
+  background-color: white;
+  &__stars {
+    display: flex;
+  }
+  &__image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+  padding: 1rem;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    button {
+      @include default-button;
+    }
+  }
+}
