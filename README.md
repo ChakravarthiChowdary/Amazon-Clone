@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+## Demo
+
+![alt text](https://github.com/ChakravarthiChowdary/Amazon-Clone/blob/master/src/app1.PNG)
+
+![alt text](https://github.com/ChakravarthiChowdary/Amazon-Clone/blob/master/src/app2.PNG)
+
+![alt text](https://github.com/ChakravarthiChowdary/Amazon-Clone/blob/master/src/app3.PNG)
+
 ### `yarn start`
 
 Runs the app in the development mode.\
