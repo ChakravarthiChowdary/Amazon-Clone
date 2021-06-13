@@ -1,10 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import { useAppSelector } from "../store/store";
 import CartItem from "../components/CartItem";
 
 const Cart = () => {
   const basketItems = useAppSelector((state) => state.data.basketItems);
+  let total = basketItems.reduce((acc, item) => acc + parseInt(item.price), 0);
+  total = new Intl.NumberFormat("en-IN", {
+    maximumSignificantDigits: 3,
+  }).format(total);
+  const history = useHistory();
   return (
     <div className="cart">
       <div className="cart__banner">
@@ -13,7 +19,18 @@ const Cart = () => {
           alt="amazonad"
           className="cart__image"
         />
-        <div className="cart__summary"></div>
+        <div className="cart__summary">
+          <p>
+            Your order is eligible for FREE Delivery. Select this option at
+            checkout. Details
+          </p>
+          <h2>Subtotal: ₹{total}/-</h2>
+          <div className="cart__giftCheck">
+            <input type="checkbox" />
+            <p>This order contains gift</p>
+          </div>
+          <button>Proceed to checkout</button>
+        </div>
       </div>
       <div className="cart__items">
         {basketItems.length > 0 ? (
@@ -33,7 +50,7 @@ const Cart = () => {
               />
               <div className="cart__emptyInfo">
                 <h2>Your Amazon Basket is empty </h2>
-                <button>Add some</button>
+                <button onClick={() => history.replace("/")}>Add some</button>
               </div>
             </div>
           </>

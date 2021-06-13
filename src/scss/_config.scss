@@ -1,6 +1,7 @@
 $primary-color: #131921;
 $secondary-color: #febd69;
 $background-color: #eaeded;
+$button-color: #ffd814;
 
 @mixin default-link-style {
   text-decoration: none;
@@ -15,4 +16,8 @@ $background-color: #eaeded;
   border-color: #a88734 #9c7e31 #846a29;
   padding: 2px 50px;
   width: 300px;
+  transition: 0.5s ease;
+  &:hover {
+    cursor: pointer;
+  }
 }

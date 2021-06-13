@@ -3,9 +3,11 @@ import SearchIcon from "@material-ui/icons/Search";
 import Cart from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useAppSelector } from "../store/store";
+import { auth } from "../firebase";
 
 const Header = () => {
-  const basketItems = useAppSelector((state) => state.data.basketItems);
+  const { basketItems, user } = useAppSelector((state) => state.data);
+  console.log(user);
   return (
     <div className="header">
       <Link to="/">
@@ -20,10 +22,20 @@ const Header = () => {
         <SearchIcon className="header__searchIcon" />
       </div>
       <div className="header__nav">
-        <Link to="/login" className="header__link">
-          <span className="header__firstElement">Hello, Sign In</span>
-          <span className="header__secondElement">Sign In</span>
-        </Link>
+        {user ? (
+          <div className="header__link">
+            <span className="header__firstElement">
+              Hello, {user.displayName}
+            </span>{" "}
+            <button onClick={() => auth.signOut()}>Sign Out</button>
+          </div>
+        ) : (
+          <Link to="/login" className="header__link">
+            <span className="header__firstElement">Hello, Sign In</span>
+
+            <span className="header__secondElement">Sign In</span>
+          </Link>
+        )}
         <Link to="/checkout" className="header__link">
           <span className="header__firstElement">Returns</span>
           <span className="header__secondElement">&Orders</span>

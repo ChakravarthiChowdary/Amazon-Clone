@@ -78,6 +78,24 @@
           box-sizing: border-box;
 }
 
+.header__link button {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100px;
+  padding: 0;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.header__link button:hover {
+  cursor: pointer;
+}
+
 .header__firstElement {
   font-size: 12px;
 }
@@ -163,9 +181,15 @@
   border-color: #a88734 #9c7e31 #846a29;
   padding: 2px 50px;
   width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.product button:hover {
+  cursor: pointer;
 }
 
 .product__rating {
@@ -207,8 +231,47 @@
 
 .cart__summary {
   background-color: white;
-  height: 248px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 100%;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cart__summary h2 {
+  font-weight: 400;
+}
+
+.cart__summary button {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+  background-color: #ffd814;
+  border: 1px solid white;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.cart__summary button:hover {
+  cursor: pointer;
+}
+
+.cart__summary button:hover {
+  cursor: pointer;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .cart__items {
@@ -250,6 +313,37 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.cart__emptyInfo button {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cart__emptyInfo button:hover {
+  cursor: pointer;
+}
+
+.cart__emptyInfo h2 {
+  font-weight: 400;
+}
+
+.cart__giftCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cart__giftCheck input {
+  margin-right: 1rem;
 }
 
 .cartItem {
@@ -296,5 +390,108 @@
   border-color: #a88734 #9c7e31 #846a29;
   padding: 2px 50px;
   width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.cartItem__info button:hover {
+  cursor: pointer;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  height: 100vh;
+  background-color: white;
+}
+
+.login img {
+  width: 150px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.login__box {
+  width: 400px;
+  border: 1px solid lightgray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.login__box p {
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+
+.login__box h1 {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.login__email {
+  width: 95%;
+  padding: 5px;
+  outline-width: 0;
+}
+
+.login__password {
+  width: 95%;
+  padding: 5px;
+  outline-width: 0;
+}
+
+.login__signInButton {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  padding: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.login__signInButton:hover {
+  cursor: pointer;
+}
+
+.login__terms {
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #111;
+}
+
+.login__registerButton {
+  background-color: #febd69;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  padding: 2px 50px;
+  width: 300px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  width: 100%;
+  padding: 5px;
+  margin-top: 0.5rem;
+  background-color: #f2f3f5;
+  border: 1px solid gray;
+}
+
+.login__registerButton:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=App.css.map */
