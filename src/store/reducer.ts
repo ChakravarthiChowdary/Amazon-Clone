@@ -11,7 +11,7 @@ interface StateType {
   basketItems: {
     id: string;
     title: string;
-    price: number;
+    price: string;
     rating: number;
     image: string;
   }[];

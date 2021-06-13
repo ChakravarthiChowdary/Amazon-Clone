@@ -5,12 +5,24 @@ import { useAppSelector } from "../store/store";
 import CartItem from "../components/CartItem";
 
 const Cart = () => {
-  const basketItems = useAppSelector((state) => state.data.basketItems);
-  let total = basketItems.reduce((acc, item) => acc + parseInt(item.price), 0);
-  total = new Intl.NumberFormat("en-IN", {
+  const basketItems: {
+    id: string;
+    title: string;
+    price: string;
+    rating: number;
+    image: string;
+  }[] = useAppSelector((state) => state.data.basketItems);
+
+  const total = basketItems.reduce(function (acc: number, item) {
+    return acc + parseInt(item.price);
+  }, 0);
+
+  const formatedTotal = new Intl.NumberFormat("en-IN", {
     maximumSignificantDigits: 3,
   }).format(total);
+
   const history = useHistory();
+
   return (
     <div className="cart">
       <div className="cart__banner">
@@ -24,7 +36,7 @@ const Cart = () => {
             Your order is eligible for FREE Delivery. Select this option at
             checkout. Details
           </p>
-          <h2>Subtotal: ₹{total}/-</h2>
+          <h2>Subtotal: ₹{formatedTotal}/-</h2>
           <div className="cart__giftCheck">
             <input type="checkbox" />
             <p>This order contains gift</p>
